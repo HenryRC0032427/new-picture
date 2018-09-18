@@ -40,5 +40,27 @@ namespace new_picture
                 await Task.Delay(100);
             }
         }
+
+        private async void button2_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 50; i++)
+            {
+                pBxLink.Location = new Point(pBxLink.Location.X + 6, pBxLink.Location.Y);
+                await Task.Delay(100);
+            }
+            for (int i = 0; i < 50; i++)
+            {
+                pBxLink.Location = new Point(pBxLink.Location.X - 3, pBxLink.Location.Y + 6);
+                await Task.Delay(100);
+            }
+
+            for (int i = 0; i < 50; i++)
+            {
+                pBxLink.Location = new Point(pBxLink.Location.X - 3, pBxLink.Location.Y - 6);
+                await Task.Delay(100);
+            }
+
+
+        }
     }
 }
