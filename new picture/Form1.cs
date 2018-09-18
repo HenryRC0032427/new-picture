@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace new_picture
 {
-    public partial class Form1 : Form
+    public partial class pathway : Form
     {
-        public Form1()
+        public pathway()
         {
             InitializeComponent();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
