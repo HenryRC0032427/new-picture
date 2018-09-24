@@ -26,7 +26,7 @@ namespace new_picture
             }
             for (int i = 0; i < 50; i++)
             {
-                pBxLink.Location = new Point(pBxLink.Location.X, pBxLink.Location.Y+5);
+                pBxLink.Location = new Point(pBxLink.Location.X, pBxLink.Location.Y + 5);
                 await Task.Delay(100);
             }
             for (int i = 0; i < 50; i++)
@@ -36,7 +36,7 @@ namespace new_picture
             }
             for (int i = 0; i < 50; i++)
             {
-                pBxLink.Location = new Point(pBxLink.Location.X, pBxLink.Location.Y-5);
+                pBxLink.Location = new Point(pBxLink.Location.X, pBxLink.Location.Y - 5);
                 await Task.Delay(100);
             }
         }
@@ -62,5 +62,21 @@ namespace new_picture
 
 
         }
+
+
+
+        private async void button3_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                pBxLink.Location = new Point (X + 5, pBxLink.Location.Y);
+                await Task.Delay(textBox1.text);
+
+
+
+            }
+        }
+
     }
 }
+
