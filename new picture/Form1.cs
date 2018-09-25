@@ -74,7 +74,7 @@ namespace new_picture
             }
             catch
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("type in a number");
                 d = 10;
             }
             for (int i = 0; i < 10; i++)
