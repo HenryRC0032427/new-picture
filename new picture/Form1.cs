@@ -67,6 +67,16 @@ namespace new_picture
 
         private async void button3_Click(object sender, EventArgs e)
         {
+            int d;
+            try
+            {
+                d = Convert.ToInt32(textBox1.Text)
+            }
+            catch
+            {
+                MessageBox.Show("error");
+                d = 10;
+            }
             for (int i = 0; i < 10; i++)
             {
                 pBxLink.Location = new Point (pBxLink.Location.X + 5, pBxLink.Location.Y);
