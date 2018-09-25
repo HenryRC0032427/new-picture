@@ -70,17 +70,17 @@ namespace new_picture
             int d;
             try
             {
-                d = Convert.ToInt32(textBox1.Text)
+                d = Convert.ToInt32(textBox1.Text);
             }
             catch
             {
-                MessageBox.Show("error");
+                MessageBox.Show("Error");
                 d = 10;
             }
             for (int i = 0; i < 10; i++)
             {
                 pBxLink.Location = new Point (pBxLink.Location.X + 5, pBxLink.Location.Y);
-                await Task.Delay(Convert.ToInt32(textBox1.Text));
+                await Task.Delay(d);
 
 
 
