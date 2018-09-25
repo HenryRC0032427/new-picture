@@ -71,6 +71,10 @@ namespace new_picture
             try
             {
                 d = Convert.ToInt32(textBox1.Text);
+                if (d<0)
+                {
+                    d = -d;
+                }
             }
             catch
             {
