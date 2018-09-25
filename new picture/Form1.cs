@@ -69,8 +69,8 @@ namespace new_picture
         {
             for (int i = 0; i < 10; i++)
             {
-                pBxLink.Location = new Point (X + 5, pBxLink.Location.Y);
-                await Task.Delay(textBox1.text);
+                pBxLink.Location = new Point (pBxLink.Location.X + 5, pBxLink.Location.Y);
+                await Task.Delay(Convert.ToInt32(textBox1.Text));
 
 
 
